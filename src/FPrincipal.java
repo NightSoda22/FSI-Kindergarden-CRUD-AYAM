@@ -10,8 +10,6 @@ public class FPrincipal extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(this);
         setTitle("Jardín de niños Willam Afton");
-        ImageIcon icon = new ImageIcon(getClass().getResource("/img/Save.png"));
-        setIconImage(icon.getImage()); 
         TQuery.setAutoCreateRowSorter(true);
         
         if (cnx.conectar("127.0.0.1","kindergarden","root","") == 1) {
